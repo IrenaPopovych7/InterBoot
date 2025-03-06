@@ -1,0 +1,63 @@
+/* Features Cards Section */
+.features-section {
+    padding: 40px 20px;
+}
+
+.features-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.feature-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.card-icon {
+    font-size: 24px;
+    color: #FF5722;
+    margin-bottom: 12px;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 12px;
+}
+
+.card-description {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.card-divider {
+    height: 1px;
+    background-color: #eee;
+    margin: 16px 0;
+}
+
+.card-subtitle {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+.card-benefits {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card-benefits li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}

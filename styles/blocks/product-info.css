@@ -1,0 +1,195 @@
+.product-info-section {
+    padding: 40px 20px;
+    background-color: #f9f8f6;
+}
+
+.product-info-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-header {
+    margin-bottom: 30px;
+}
+
+.section-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #222;
+    margin-top: 8px;
+}
+
+.info-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+.info-card-content {
+    padding: 24px;
+}
+
+.platform-icons {
+    position: relative;
+    height: 180px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.platform-icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.telegram {
+    background-color: #2AABEE;
+    color: white;
+    top: 50%;
+    left: 30%;
+}
+
+.instagram {
+    background-color: white;
+    color: #E1306C;
+    bottom: 30%;
+    left: 50%;
+}
+
+.whatsapp {
+    background-color: #25D366;
+    color: white;
+    top: 30%;
+    right: 20%;
+}
+
+.viber {
+    background-color: #7360F2;
+    color: white;
+    top: 40%;
+    left: 20%;
+}
+
+.messenger {
+    background-color: #0084FF;
+    color: white;
+    top: 60%;
+    right: 30%;
+}
+
+.connector-lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle at center, transparent 0%, transparent 70%, #FFE0D6 100%);
+    z-index: -1;
+}
+
+.info-card-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 16px;
+}
+
+.info-card-description {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Analytics Card */
+.analytics-card {
+    margin-top: 30px;
+}
+
+.analytics-chart {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 150px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+.chart-bar {
+    width: 16%;
+    background-color: #f0f0f0;
+    border-radius: 4px 4px 0 0;
+}
+
+.chart-bar:nth-child(1), .chart-bar:nth-child(5) {
+    background-color: #FF5722;
+}
+
+.analytics-stats {
+    padding: 16px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.stat-title {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.stat-value {
+    font-size: 24px;
+    font-weight: 700;
+    color: #222;
+}
+
+.stat-trend {
+    font-size: 14px;
+    color: #4CAF50;
+    margin-bottom: 8px;
+}
+
+.trend-chart {
+    height: 30px;
+    background-color: #E8F5E9;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+}
+
+.trend-chart:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-image: linear-gradient(90deg, transparent 0%, #4CAF50 100%);
+    clip-path: polygon(0 100%, 20% 70%, 40% 85%, 60% 50%, 80% 30%, 100% 0, 100% 100%);
+}
+
+.analytics-text {
+    margin-top: 30px;
+}
+
+.info-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 16px;
+}
+
+.info-description {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.6;
+}

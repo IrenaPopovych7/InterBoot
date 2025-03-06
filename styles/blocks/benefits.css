@@ -1,0 +1,62 @@
+/* Benefits Section */
+.benefits-section {
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: white;
+    margin: 20px 0;
+}
+
+.benefits-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.benefit-icon {
+    color: #FF5722;
+    font-size: 20px;
+    margin-right: 12px;
+    background-image: url(./../../images/icons/dolarCrossed.svg);
+}
+
+.benefit-text {
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+}
+
+.metrics-container {
+    display: none; /* Hidden on mobile by default */
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.metric {
+    text-align: center;
+    padding: 12px;
+}
+
+.metric-value {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    background-color: #2196F3;
+    border-radius: 4px;
+    padding: 8px 16px;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.metric-label {
+    font-size: 14px;
+    color: #666;
+}

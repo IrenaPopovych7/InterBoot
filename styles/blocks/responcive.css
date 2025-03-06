@@ -1,0 +1,96 @@
+/* Desktop styles */
+@media (max-width: 768px) {
+    .demo-button-large {
+        padding: 6px 12px;
+        font-size: 14px;
+        max-width: 130px;
+    }
+}
+@media (min-width: 768px){
+    /* Header desktop styles */
+    .nav {
+        display: block;
+    }
+
+    .header-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    /* Hero desktop styles */
+    .hero {
+        padding: 60px 0;
+    }
+    
+    .hero-container {
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+    }
+    
+    .hero-text-container {
+        flex: 1;
+    }
+    
+    .hero-image-container {
+        flex: 1;
+        margin-top: 0;
+    }
+    
+    .hero-heading {
+        font-size: 42px;
+    }
+    
+    
+    
+    /* Benefits desktop styles */
+    .benefits-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 20px;
+    }
+    
+    .benefit-item {
+        margin-bottom: 0;
+    }
+    
+    .metrics-container {
+        display: flex;
+        margin-top: 0;
+        background-color: transparent;
+    }
+    
+    /* Features cards desktop styles */
+    .features-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    /* Product info desktop styles */
+    .product-info-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    
+    .section-header {
+        grid-column: 1 / -1;
+    }
+    
+    .analytics-text {
+        grid-column: 1 / -1;
+    }
+    /* Footer desktop styles */
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .footer-column {
+        flex: 1;
+    }
+    
+    .logo-column {
+        flex: 1.5;
+    }
+}

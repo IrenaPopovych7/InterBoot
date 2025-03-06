@@ -1,0 +1,69 @@
+.icon{
+    display: block;
+    height: 24px;
+    width: 24px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.icon--close {
+    background-image: url(../../images/icons/close.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.icon--menu {
+    background-image: url(../../images/icons/mobile/menuMob.svg);
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.benefit-free {
+    background-image: url(../../images/icons/mobile/dolarCrossed.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.benefit-nocard {
+    background-image: url(../../images/icons/mobile/creditCardCrossed.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.benefit-saving {
+    background-image: url(../../images/icons/mobile/save-moneyMob.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.check-icon {
+    background-image: url(../../images/icons/mobile/check-circle-solid.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.manage-img {
+    background-image: url(../../images/Interactions.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.analitics-img {
+    background-image: url(../../images/Analytics.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.chat-img {
+    background-image: url(../../images/Chat.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.mess-img {
+    background-image: url(../../images/Messengers.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
