@@ -18,6 +18,12 @@
     background-position:center;
     background-repeat: no-repeat;
 }
+
+@media (min-width: 756px) {
+    .icon--menu {
+        display: none;
+    }
+}
 .benefit-free {
     background-image: url(../../images/icons/mobile/dolarCrossed.svg);
     background-size: contain;

@@ -48,5 +48,6 @@ body {
     cursor: pointer;
     width: 100%;
     max-width: 350px;
-    margin-bottom: 30px;
+    height: 35px;
+
 }

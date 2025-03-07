@@ -9,15 +9,16 @@
     <script src="./src/index.js" defer></script>   
 </head>
 <body>
-    <div class="menu__top">
-        <a href="#">
-            <img src="./images/Logo_Interbot.svg" alt="Logo_Interbot" class="menu__logo"/>
-        </a>
-        <a href="#request_a_demo" class="demo-button-large">Request a demo</a>
-        <a href="#"><div class="icon icon--close"></div></a>
-    </div>
+    
     <aside class="menu" id="menu">
-        <div class="menu__container  menu-toggle">
+        <div class="menu__top">
+            <a href="#">
+                <img src="./images/Logo_Interbot.svg" alt="Logo_Interbot" class="menu__logo"/>
+            </a>
+            <a href="#request_a_demo" class="demo-button-large">Request a demo</a>
+            <a href="#"><div class="icon icon--close"></div></a>
+        </div>
+        <div class="menu__container">
             <!-- <div class="menu__grid"> -->
                 <div class="dropdown">
                     <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -51,10 +52,40 @@
 
      <!-- #region MAIN-->
      <div class="main-content">
-        <div class="menu__top">
+        <div class="menu__top stiky">
             <a href="#">
                 <img src="./images/Logo_Interbot.svg" alt="Logo_Interbot" class="menu__logo"/>
             </a>
+
+            <div class="menu__desctop">
+                <!-- <div class="menu__grid"> -->
+                <nav class="menu__nav">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a class="menu__link" href="#products">Product</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#indostry">Industries</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="./contacts">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        EN
+                    </a>
+                    
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">EN</a>
+                        <a class="dropdown-item" href="#"></a>
+                        <a class="dropdown-item" href="#"></a>
+                    </div>
+                    </div>
+            </div>
+
             <a href="#request_a_demo" class="demo-button-large">Request a demo</a>
             <a href="#menu"><div class="icon icon--menu"></div></a>
         </div>
@@ -145,11 +176,11 @@
          <!-- #endregion-->
         
         <!-- Features Cards Section -->
-        <section class="features-section">
-            <div class="section-header container">
-                <div class="subtitle">AI-powered solution</div>
-                <h2 class="section-title">What is for?</h2>
-            </div>
+        <section class="product-info-section">
+                <div class="section-header">
+                    <div class="subtitle">AI-powered solution</div>
+                    <h2 class="section-title">What is this product?</h2>
+                </div>
             <div class="features-container">
                 <!-- E-commerce Card -->
                 <div class="feature-card">
