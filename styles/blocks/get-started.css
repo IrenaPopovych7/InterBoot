@@ -164,7 +164,6 @@ h1 {
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
-        text-align: center;
         padding: 1.5rem;
     }
     

@@ -18,6 +18,12 @@
     background-position:center;
     background-repeat: no-repeat;
 }
+.icon--globe {
+    background-image: url(../../images/icons/desctop/languageDesc.svg);
+}
+/* .icon--dropdown {
+    background-image: url(../../images/icons/mobile/menuMob.svg);
+} */
 
 @media (min-width: 756px) {
     .icon--menu {
@@ -72,4 +78,14 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+}
+.icon--linkdin{
+    background-image: url(../../images/icons/mobile/linkdinMob.svg);
+}
+.icon--instagram {
+    background-image: url(../../images/icons/mobile/instaMob.svg);
+}
+
+@media (min-width: 768px){
+    
 }

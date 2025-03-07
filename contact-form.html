@@ -4,239 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interbot Demo Request Form</title>
-    <style>
-        /* Variables */
-        :root {
-            --primary-color: #FF5722;
-            --text-color: #222222;
-            --text-light: #666666;
-            --white: #FFFFFF;
-            --off-white: #F9F8F6;
-            --light-gray: #E5E5E5;
-            --dark-gray: #333333;
-            
-            --border-radius: 4px;
-            --card-border-radius: 8px;
-            --box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-            
-            --spacing-xs: 4px;
-            --spacing-sm: 8px;
-            --spacing-md: 16px;
-            --spacing-lg: 24px;
-            --spacing-xl: 32px;
-            
-            --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
-        }
-
-        /* Reset & Basics */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: var(--font-family);
-        }
-
-        body {
-            background-color: var(--off-white);
-            color: var(--text-color);
-            line-height: 1.5;
-        }
-
-        /* Container */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: var(--spacing-md);
-        }
-
-        /* Header (for mobile view) */
-        .header {
-            background-color: var(--white);
-            box-shadow: var(--box-shadow);
-            padding: var(--spacing-md);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-        }
-
-        .logo-icon {
-            color: var(--primary-color);
-            font-size: 24px;
-            margin-right: var(--spacing-xs);
-        }
-
-        .logo-text {
-            font-weight: 700;
-            font-size: 20px;
-            color: var(--text-color);
-        }
-
-        .close-button {
-            background: none;
-            border: none;
-            font-size: 20px;
-            cursor: pointer;
-        }
-
-        /* Demo Form Section */
-        .demo-section {
-            padding: var(--spacing-xl) 0;
-        }
-
-        .demo-container {
-            display: flex;
-            flex-direction: column;
-            gap: var(--spacing-xl);
-        }
-
-        /* Demo Content */
-        .demo-content {
-            width: 100%;
-        }
-
-        .demo-title {
-            font-size: 28px;
-            font-weight: 800;
-            margin-bottom: var(--spacing-md);
-            color: var(--text-color);
-        }
-
-        .demo-description {
-            font-size: 16px;
-            color: var(--text-light);
-            margin-bottom: var(--spacing-lg);
-        }
-
-        .benefits-list {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            gap: var(--spacing-md);
-        }
-
-        .benefit-item {
-            display: flex;
-            gap: var(--spacing-md);
-            align-items: flex-start;
-        }
-
-        .benefit-icon {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-width: 20px;
-            height: 20px;
-            background-color: var(--primary-color);
-            color: var(--white);
-            border-radius: 50%;
-            margin-top: 3px;
-        }
-
-        .benefit-text {
-            font-size: 16px;
-            color: var(--text-color);
-        }
-
-        /* Form Card */
-        .form-card {
-            background-color: var(--white);
-            border-radius: var(--card-border-radius);
-            padding: var(--spacing-lg);
-            box-shadow: var(--box-shadow);
-            width: 100%;
-        }
-
-        .form-title {
-            font-size: 18px;
-            font-weight: 600;
-            margin-bottom: var(--spacing-lg);
-            color: var(--text-color);
-        }
-
-        .form-group {
-            margin-bottom: var(--spacing-md);
-        }
-
-        .form-label {
-            display: block;
-            font-size: 14px;
-            margin-bottom: var(--spacing-xs);
-            color: var(--text-color);
-        }
-
-        .form-input {
-            width: 100%;
-            padding: var(--spacing-md);
-            border: 1px solid var(--light-gray);
-            border-radius: var(--border-radius);
-            font-size: 16px;
-        }
-
-        .form-input:focus {
-            outline: none;
-            border-color: var(--primary-color);
-        }
-
-        .form-terms {
-            font-size: 14px;
-            color: var(--text-light);
-            margin: var(--spacing-lg) 0;
-        }
-
-        .form-terms a {
-            color: var(--primary-color);
-            text-decoration: none;
-        }
-
-        .form-button {
-            width: 100%;
-            padding: var(--spacing-md);
-            background-color: var(--dark-gray);
-            color: var(--white);
-            border: none;
-            border-radius: var(--border-radius);
-            font-size: 16px;
-            font-weight: 500;
-            cursor: pointer;
-            transition: background-color 0.2s;
-        }
-
-        .form-button:hover {
-            background-color: #222222;
-        }
-
-        /* Desktop Styles */
-        @media (min-width: 768px) {
-            .header {
-                display: none; /* Hide mobile header */
-            }
-
-            .demo-container {
-                flex-direction: row;
-                align-items: flex-start;
-            }
-
-            .demo-content {
-                flex: 1;
-                max-width: 60%;
-                padding-right: var(--spacing-xl);
-            }
-
-            .demo-title {
-                font-size: 36px;
-            }
-
-            .form-card {
-                flex: 1;
-                max-width: 40%;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="./src/index.js" defer></script>
 </head>
 <body>
     <!-- Mobile Header (only visible on small screens) -->
@@ -244,8 +13,81 @@
         <a href="./index.html">
             <img src="./images/Logo_Interbot.svg" />
         </a>
-        <button class="close-button" id="closeButton">✕</button>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="icon icon--globe"></span>
+              <span>EN</span>
+              <span class="icon icon--dropdown"></span>
+            </button>
+            
+            <div class="dropdown-menu" aria-labelledby="languageDropdown">
+              <a class="dropdown-item" href="#" data-lang="en">
+                <span class="icon icon--globe"></span>
+                <span>EN</span>
+              </a>
+              <a class="dropdown-item coming-soon" href="#" data-lang="de">
+                <span class="icon icon--coming-soon">⏱️</span>
+                <span>DE</span>
+              </a>
+              <a class="dropdown-item coming-soon" href="#" data-lang="ar" >
+                <span class="icon icon--coming-soon">⏱️</span>
+                <span>AR</span>
+              </a>
+            </div>
+          </div>
+        <a href="#menu"><div class="icon icon--menu"></div></a>
     </header>
+    <div class="main-content">
+        <div class="menu__top stiky">
+            <a href="#">
+                <img src="./images/Logo_Interbot.svg" alt="Logo_Interbot" class="menu__logo"/>
+            </a>
+
+            <div class="menu__desctop">
+                <!-- <div class="menu__grid"> -->
+                <nav class="menu__nav">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a class="menu__link" href="./index.html">Home</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" onclick="redirectToProducts()">Product</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" onclick="redirectToIndostry()">Industries</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" onclick="redirectToContacts()">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="icon icon--globe"></span>
+                      <span>EN</span>
+                      <span class="icon icon--dropdown"></span>
+                    </button>
+                    
+                    <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                      <a class="dropdown-item" href="#" data-lang="en">
+                        <span class="icon icon--globe"></span>
+                        <span>EN</span>
+                      </a>
+                      <a class="dropdown-item coming-soon" href="#" data-lang="de">
+                        <span class="icon icon--coming-soon">⏱️</span>
+                        <span>DE</span>
+                      </a>
+                      <a class="dropdown-item coming-soon" href="#" data-lang="ar" >
+                        <span class="icon icon--coming-soon">⏱️</span>
+                        <span>AR</span>
+                      </a>
+                    </div>
+                  </div>
+            </div>
+            <a href="#menu"><div class="icon icon--menu"></div></a>
+        </div>
+</div>
 
     <!-- Demo Form Section -->
     <section class="demo-section">
@@ -256,15 +98,15 @@
                 <p class="demo-description">Fill in the form, and we'll get back to you with access to the following:</p>
                 <ul class="benefits-list">
                     <li class="benefit-item">
-                        <div class="benefit-icon">✓</div>
+                        <div class="icon check-icon"></div>
                         <div class="benefit-text">Real-world use cases to optimise workflows and improve efficiency.</div>
                     </li>
                     <li class="benefit-item">
-                        <div class="benefit-icon">✓</div>
+                        <div class="icon check-icon"></div>
                         <div class="benefit-text">A clear understanding of how our chatbot enhances customer engagement and accelerates growth.</div>
                     </li>
                     <li class="benefit-item">
-                        <div class="benefit-icon">✓</div>
+                        <div class="icon check-icon"></div>
                         <div class="benefit-text">Tailored insights into how our platform can support your business.</div>
                     </li>
                 </ul>
@@ -285,10 +127,21 @@
                     <p class="form-terms">
                         By submitting this form, you agree to our <a href="#">Privacy Policy</a> and consent to be contacted.
                     </p>
-                    <button type="submit" class="form-button">Send request</button>
+                    <button type="submit" class="form-button" id="testButton" onclick="showModal()">Send request</button>
                 </form>
             </div>
         </div>
+
+        <div class="modal-overlay" id="successModal">
+            <div class="modal-container">
+              <div class="modal-content">
+                <h3 class="modal-title">Thank you for your request!</h3>
+                <p class="modal-text">We've received your inquiry and will get back to you as soon as possible.</p>
+                <p class="modal-text">Please check your inbox for a confirmation email with more details.</p>
+                <button class="modal-button" id="modalCloseButton">Okay</button>
+              </div>
+            </div>
+          </div>
     </section>
 
     <script>
@@ -332,6 +185,46 @@
                 });
             }
         });
+
+        // Function to show the modal
+    function showModal() {
+      const modal = document.getElementById('successModal');
+      modal.classList.add('active');
+    }
+
+    // Function to hide the modal
+    function hideModal() {
+      const modal = document.getElementById('successModal');
+      modal.classList.remove('active');
+    }
+
+    // Initialize modal functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get test button and close button
+      const testButton = document.getElementById('testButton');
+      const closeButton = document.getElementById('modalCloseButton');
+      
+      // Add click event to test button
+      if (testButton) {
+        testButton.addEventListener('click', showModal);
+      }
+      
+      // Add click event to close button
+      if (closeButton) {
+        closeButton.addEventListener('click', hideModal);
+      }
+    });
+
+    function redirectToContacts() {
+    window.location.href = "index.html#footer";
+}
+function redirectToProducts() {
+    window.location.href = "index.html#products";
+}
+function redirectToIndostry() {
+    window.location.href = "index.html#indostry";
+}
+
     </script>
 </body>
 </html>

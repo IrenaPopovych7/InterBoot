@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inter Bot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="./styles/index.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="./src/index.js" defer></script>   
+    <script src="./src/index.js" defer></script>
 </head>
 <body>
     
@@ -15,38 +15,47 @@
             <a href="#">
                 <img src="./images/Logo_Interbot.svg" alt="Logo_Interbot" class="menu__logo"/>
             </a>
-            <a href="#request_a_demo" class="demo-button-large">Request a demo</a>
+            <a href="./contact-form.html" class="demo-button-large">Request a demo</a>
             <a href="#"><div class="icon icon--close"></div></a>
         </div>
         <div class="menu__container">
-            <!-- <div class="menu__grid"> -->
-                <div class="dropdown">
-                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      EN
-                    </a>
-                  
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                      <a class="dropdown-item" href="#">EN</a>
-                      <a class="dropdown-item" href="#"></a>
-                      <a class="dropdown-item" href="#"></a>
-                    </div>
-                  </div>
-    
-                <nav class="menu__nav">
-                    <ul class="menu__list">
-                        <li class="menu__item">
-                            <a class="menu__link" href="#products">Product</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#indostry">Industries</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="./contacts">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        <!-- </div> -->
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="icon icon--globe"></span>
+                  <span>EN</span>
+                  <span class="icon icon--dropdown"></span>
+                </button>
+                
+                <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                  <a class="dropdown-item" href="#" data-lang="en">
+                    <span class="icon icon--globe"></span>
+                    <span>EN</span>
+                  </a>
+                  <a class="dropdown-item coming-soon" href="#" data-lang="de">
+                    <span class="icon icon--coming-soon">⏱️</span>
+                    <span>DE</span>
+                  </a>
+                  <a class="dropdown-item coming-soon" href="#" data-lang="ar" >
+                    <span class="icon icon--coming-soon">⏱️</span>
+                    <span>AR</span>
+                  </a>
+                </div>
+              </div>
+
+            <nav class="menu__nav">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#products">Product</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#indostry">Industries</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#footer">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </aside>
      <!-- #endregion  -->
 
@@ -68,25 +77,36 @@
                             <a class="menu__link" href="#indostry">Industries</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link" href="./contacts">Contact</a>
+                            <a class="menu__link" href="#footer">Contact</a>
                         </li>
                     </ul>
                 </nav>
 
                 <div class="dropdown">
-                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        EN
-                    </a>
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="icon icon--globe"></span>
+                      <span>EN</span>
+                      <span class="icon icon--dropdown"></span>
+                    </button>
                     
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="#">EN</a>
-                        <a class="dropdown-item" href="#"></a>
-                        <a class="dropdown-item" href="#"></a>
+                    <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                      <a class="dropdown-item" href="#" data-lang="en">
+                        <span class="icon icon--globe"></span>
+                        <span>EN</span>
+                      </a>
+                      <a class="dropdown-item coming-soon" href="#" data-lang="de">
+                        <span class="icon icon--coming-soon">⏱️</span>
+                        <span>DE</span>
+                      </a>
+                      <a class="dropdown-item coming-soon" href="#" data-lang="ar" >
+                        <span class="icon icon--coming-soon">⏱️</span>
+                        <span>AR</span>
+                      </a>
                     </div>
-                    </div>
+                  </div>
             </div>
 
-            <a href="#request_a_demo" class="demo-button-large">Request a demo</a>
+            <a href="./contact-form.html" class="demo-button-large">Request a demo</a>
             <a href="#menu"><div class="icon icon--menu"></div></a>
         </div>
         <!-- Hero Section -->
@@ -96,7 +116,7 @@
                     <div class="subtitle">AI-powered automatization</div>
                     <h1 class="hero-heading">Enhance sales and support with <span class="highlight">Interbot</span> chatbot</h1>
                     <p class="hero-description">Our AI chatbot automates customer interactions, boosts engagement, simplifies messenger communication, and enhances team efficiency—all in one platform.</p>
-                    <button class="demo-button-large">Request a free demo</button>
+                    <a href="./contact-form.html" class="demo-btn">Request a free demo</a>
                 </div>
                 <div class="hero-image-container">
                     <img src="./images/Desktop_mockup_1.png" alt="Interbot dashboard interface" class="hero-image">
@@ -123,7 +143,7 @@
         </section>
 
              <!-- Product Info Section -->
-             <section class="product-info-section">
+             <section class="product-info-section" id="products">
                 <div class="product-info-container">
                     <div class="section-header">
                         <div class="subtitle">AI-powered solution</div>
@@ -374,10 +394,10 @@
             </div>
         </section>
 
-        <section class="service-section">
+        <section class="service-section" id="indostry">
             <div class="service-container">
                 <div class="subtitle">AI-powered solution</div>
-                <h2 class="section-title">What is for?</h2>
+                <h2 class="section-title">What is it for?</h2>
                 <div class="info">
                     <div class="info-content">
                         <div class="icon-people"></div>
@@ -417,7 +437,7 @@
                 <div class="subtitle">AI-powered solution</div>
                 <h2 class="section-title">What is for?</h2>
                 <p class="subtitle">Streamline operations, cut costs, and enhance customer experience with AI-powered automation. See it in action today!</p>
-                <a href="">Request a free demo</a>
+                <a href="./contact-form.html" class="demo-btn">Request a free demo</a>
                 <div class="circle"></div>
                 <div class="phone "></div>
 
@@ -429,7 +449,7 @@
                 <div class="get-started">Get started</div>
                 <h1>Optimise your business now</h1>
                 <p class="description">Streamline customer interactions, drive new leads, and boost engagement with our AI chatbot—automating sales, support, and communication. See it in action today!</p>
-                <button class="demo-btn">Request a free demo</button>
+                <a href="./contact-form.html" class="demo-btn">Request a free demo</a>
             </div>
             
             <div class="phone-container">
@@ -441,7 +461,7 @@
         </div>
 
    <!-- #region FOOTER -->
-<footer class="footer">
+<footer class="footer" id="footer">
     <div class="footer__content">
         <img src="./images/Logo_Interbot.svg" alt="Interbot logo" class="footer__logo">
 

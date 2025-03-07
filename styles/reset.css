@@ -27,12 +27,12 @@ h6 {
 	font-weight: inherit;
 	font-size: inherit;
 }
-html,
+/* html,
 body {
 	height: 100%;
 	line-height: 1;
 	position: relative;
-}
+} */
 textarea,
 button,
 input {

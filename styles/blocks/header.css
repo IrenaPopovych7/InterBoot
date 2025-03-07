@@ -1,5 +1,6 @@
 .header {
     box-sizing: border-box;
+    position: absolute;
     /* min-height: 100vh; */
 }
 

@@ -1,0 +1,84 @@
+/* Language Dropdown Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Main dropdown button styles */
+  .dropdown .btn-secondary {
+    background-color: #fff;
+    border-radius: 8px;
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .dropdown .btn-secondary:hover,
+  .dropdown .btn-secondary:focus {
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+
+  .dropdown-item.coming-soon {
+    opacity: 0.7;
+    pointer-events: none; /* Makes it non-clickable */
+  }
+  
+  .icon--coming-soon {
+    font-size: 12px;
+    margin-left: 8px;
+    color: #999;
+  }
+  
+  /* When dropdown is open, rotate the arrow */
+  .dropdown.show .icon--dropdown {
+    transform: rotate(180deg);
+  }
+  
+  /* Dropdown menu styling */
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    min-width: 120px;
+    padding: 8px 0;
+    margin: 0;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .dropdown.show .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    color: #333;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background-color 0.2s ease;
+  }
+  
+  .dropdown-item:hover,
+  .dropdown-item:focus {
+    background-color: #f5f5f5;
+    text-decoration: none;
+  }
+  
+  /* Mobile vs Desktop styles */
+  @media (min-width: 768px) {
+    .dropdown .btn-secondary {
+      font-size: 14px;
+    }
+  }
