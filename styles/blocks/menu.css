@@ -44,11 +44,24 @@
   }
 
   .menu__list {
+    margin-top: 24px;
+    padding: 24px 16px;
+    background-color: var(--white);
+    border-radius: 10px;
   }
 
   .menu__nav {
   display: flex;
   flex-direction: column;
+  }
+  .menu__item {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+  }
+  .menu__item:hover {
+    background-color: var(--gray-300);
   }
 
   .menu__desctop {

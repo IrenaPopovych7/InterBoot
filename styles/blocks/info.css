@@ -1,0 +1,9 @@
+.info-content {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+.info-conntainer {
+    display: flex;
+    flex-direction: column;
+}

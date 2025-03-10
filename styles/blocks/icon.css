@@ -8,76 +8,45 @@
 }
 .icon--close {
     background-image: url(../../images/icons/close.svg);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 .icon--menu {
     background-image: url(../../images/icons/mobile/menuMob.svg);
-    background-size:cover;
-    background-position:center;
-    background-repeat: no-repeat;
 }
 .icon--globe {
     background-image: url(../../images/icons/desctop/languageDesc.svg);
 }
-/* .icon--dropdown {
-    background-image: url(../../images/icons/mobile/menuMob.svg);
-} */
-
-@media (min-width: 756px) {
-    .icon--menu {
-        display: none;
-    }
+.icon--dropdown {
+    background-image: url(../../images/icons/Vector.svg);
 }
+
 .benefit-free {
     background-image: url(../../images/icons/mobile/dolarCrossed.svg);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 .benefit-nocard {
-    background-image: url(../../images/icons/mobile/creditCardCrossed.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    
+    background-image: url(../../images/icons/mobile/creditCardCrossed.png);    
 }
 .benefit-saving {
     background-image: url(../../images/icons/mobile/save-moneyMob.svg);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 .check-icon {
     background-image: url(../../images/icons/mobile/check-circle-solid.svg);
+}
+.icon-size {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
 .manage-img {
     background-image: url(../../images/Interactions.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 .analitics-img {
     background-image: url(../../images/Analytics.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 .chat-img {
     background-image: url(../../images/Chat.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 .mess-img {
     background-image: url(../../images/Messengers.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 .icon--linkdin{
     background-image: url(../../images/icons/mobile/linkdinMob.svg);
@@ -85,7 +54,61 @@
 .icon--instagram {
     background-image: url(../../images/icons/mobile/instaMob.svg);
 }
+.icon-people {
+    background-image: url(../../images/icons/mobile/peopleMob.svg);
+}
+
+.icon__footer {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    margin-top: 16px;
+}
+.icon-setting {
+    background-image: url(../../images/icons/mobile/settingMob.svg);
+}
+.icon-screen {
+    background-image: url(../../images/icons/desctop/computerDesc.svg);
+}
+.icon-chain {
+    background-image: url(../../images/icons/desctop/chainDesc.svg);
+}
 
 @media (min-width: 768px){
-    
+    .icon--menu {
+        display: none;
+    }
+    icon--close {
+        background-image: url(../../images/icons/close.svg);
+    }
+    .icon--menu {
+        background-image: url(../../images/icons/desctop/menuMob.svg);
+    }
+    .icon--globe {
+        background-image: url(../../images/icons/desctop/languageDesc.svg);
+    }
+    .benefit-free {
+        background-image: url(../../images/icons/desctop/dolarCrossed.svg);
+    }
+    .benefit-nocard {
+        background-image: url(../../images/icons/desctop/creditCardCrossed.png);    
+    }
+    .benefit-saving {
+        background-image: url(../../images/icons/desctop/save-moneyMob.svg);
+    }
+    .check-icon {
+        background-image: url(../../images/icons/desctop/check-circle-solid.svg);
+    }
+    .icon--linkdin{
+        background-image: url(../../images/icons/desctop/linkdinMob.svg);
+    }
+    .icon--instagram {
+        background-image: url(../../images/icons/desctop/instaMob.svg);
+    }
+    .icon-people {
+        background-image: url(../../images/icons/desctop/peopledesc.svg);
+    }
+    .icon-setting {
+        background-image: url(../../images/icons/desctop/settingDesc.svg);
+    }
 }
