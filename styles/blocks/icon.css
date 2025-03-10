@@ -73,6 +73,12 @@
 .icon-chain {
     background-image: url(../../images/icons/desctop/chainDesc.svg);
 }
+.icon--linkdin{
+    background-image: url(../../images/icons/desctop/linkdinMob.svg);
+}
+.icon--instagram {
+    background-image: url(../../images/icons/desctop/instaMob.svg);
+}
 
 @media (min-width: 768px){
     .icon--menu {
@@ -98,12 +104,6 @@
     }
     .check-icon {
         background-image: url(../../images/icons/desctop/check-circle-solid.svg);
-    }
-    .icon--linkdin{
-        background-image: url(../../images/icons/desctop/linkdinMob.svg);
-    }
-    .icon--instagram {
-        background-image: url(../../images/icons/desctop/instaMob.svg);
     }
     .icon-people {
         background-image: url(../../images/icons/desctop/peopledesc.svg);
